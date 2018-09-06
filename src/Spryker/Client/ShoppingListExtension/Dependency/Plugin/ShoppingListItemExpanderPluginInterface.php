@@ -9,11 +9,11 @@ namespace Spryker\Client\ShoppingListExtension\Dependency\Plugin;
 
 use Generated\Shared\Transfer\ShoppingListItemTransfer;
 
-interface ShoppingListItemRequestExpanderPluginInterface
+interface ShoppingListItemExpanderPluginInterface
 {
     /**
      * Specification:
-     * - Expands ShoppingListItemTransfer with the given request params.
+     * - Expands ShoppingListItemTransfer with the given params.
      *
      * @api
      *
@@ -22,5 +22,5 @@ interface ShoppingListItemRequestExpanderPluginInterface
      *
      * @return \Generated\Shared\Transfer\ShoppingListItemTransfer
      */
-    public function expand(ShoppingListItemTransfer $shoppingListItemTransfer, array $params = []): ShoppingListItemTransfer;
+    public function expand(ShoppingListItemTransfer $shoppingListItemTransfer, array $params): ShoppingListItemTransfer;
 }
